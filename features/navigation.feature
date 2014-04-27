@@ -1,0 +1,22 @@
+Feature: Click through Navigation Links
+
+Scenario: Links
+  * I xpath "Home" "a"
+  * I should be on "http://www.thinkthroughmath.com/"
+  * I xpath "Our Solution" "a"
+  * I should be on "/math-intervention-solution"
+  * I xpath "Implementation" "a"
+  * I should be on "/implementation"
+  * I xpath "Results" "a"
+  * I should be on "/our-success"
+  * I xpath "Resources" "a"
+  * I should be on "/think-through-math-resources"
+  * I xpath "About Us" "a"
+  * I should be on "/about-think-through-math"
+  * I xpath "Join The Movement" "a"
+  * I should be on "/request-a-demo"
+  * I fill in "firstname" with "Rich"
+  * I fill in "lastname" with "Downie"
+  * I xpath "Math Coach" "option"
+  * I click_on "primary" "class"
+  * I should see "Please complete this mandatory field."
